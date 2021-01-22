@@ -1,0 +1,16 @@
+.header {
+  //Desktop
+  height: 100px;
+  padding: 0 25px;
+
+  //Mobile && Tablet
+  @include breakpoint-down(medium) {
+    height: 50px;
+    justify-content: center;
+  }
+  &__title {
+    font-family: $titleFont;
+    font-size: $font-xl;
+    cursor: pointer;
+  }
+}
