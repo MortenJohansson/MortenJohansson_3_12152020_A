@@ -1,0 +1,16 @@
+.location {
+  font-family: $textFont;
+  font-size: $font-sm;
+  height: 50px;
+  background-color: $locationColor;
+
+  &__icon {
+    position: relative;
+    right: 15px;
+  }
+
+  // Mobile && Tablet
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

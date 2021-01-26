@@ -1,0 +1,45 @@
+.hero {
+  height: 450px;
+
+  text-align: center;
+
+  .heroTop {
+    padding: 50px 25px;
+    height: 250px;
+    background-color: $backgroundColorAlt;
+
+    &__title {
+      font-family: $textFont;
+      font-size: $font-lg;
+      margin-bottom: 25px;
+    }
+    &__text {
+      font-family: $textFont;
+      font-size: $font-sm;
+    }
+    &__button {
+      margin-top: 25px;
+    }
+  }
+
+  .heroBottom {
+    padding: 50px 25px;
+    height: 200px;
+
+    &__title {
+      text-align: left;
+    }
+  }
+
+  @include breakpoint-down(small) {
+    height: 725px;
+
+    .heroTop {
+      height: 268px;
+
+      &__text {
+        height: 38px;
+      }
+    }
+  }
+}
