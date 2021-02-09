@@ -1,14 +1,14 @@
 .footer {
   height: 150px;
-  padding: 44px;
   background-color: $footerColor;
   color: white;
   text-align: center;
 
   //  Mobile && tablet
   @include breakpoint-down(small) {
+    display: block;
     height: 200px;
-    padding: 25px;
+    padding: 25px 10px;
     text-align: left;
 
     &__links {

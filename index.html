@@ -12,8 +12,10 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header flex flex-ai-c">
-      <h1 class="header__title"><a href="index.html">ohmyfood</a></h1>
+    <header class="header">
+      <nav class="header__nav">
+        <h1 class="header__navTitle"><a href="index.html">ohmyfood</a></h1>
+      </nav>
     </header>
 
     <!-- location section -->
@@ -34,24 +36,113 @@
       </div>
       <div class="heroBottom">
         <h2 class="heroBottom__title">How it works</h2>
+        <div class="heroCards flex flex-ai-c">
+          <div class="heroCard flex flex-ai-c">
+            <div class="heroCard__circle flex flex-jc-c flex-ai-c">
+              <p>1</p>
+            </div>
+            <i class="fas fa-mobile-alt heroCard__icon"></i>
+            <p class="heroCard__text">Chose a restaurant</p>
+          </div>
+          <div class="heroCard flex flex-ai-c">
+            <div class="heroCard__circle flex flex-jc-c flex-ai-c">
+              <p>2</p>
+            </div>
+            <i class="fas fa-mobile-alt heroCard__icon"></i>
+            <p class="heroCard__text">Create your menu</p>
+          </div>
+          <div class="heroCard flex flex-ai-c">
+            <div class="heroCard__circle flex flex-jc-c flex-ai-c">
+              <p>3</p>
+            </div>
+            <i class="fas fa-mobile-alt heroCard__icon"></i>
+            <p class="heroCard__text">Go enjoy it at the restaurant</p>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Restaurants Section -->
+    <main class="restaurants">
+      <div class="restaurants__section">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <section class="restaurants__cards grid">
+          <!-- The Full Palette -->
+          <div class="restaurants__card restaurants__card--big fullPalette">
+            <img
+              src="./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="the full Palette picture"
+              class="restaurants__cardPicture restaurants__cardPicture--big"
+            />
+            <div class="restaurants__cardInfo grid">
+              <h2 class="restaurants__cardTitle">The Full Palette</h2>
+              <p class="restaurants__cardText">New York</p>
+              <i class="far fa-heart restaurants__cardIcon"></i>
+            </div>
+          </div>
+
+          <!-- The Enchanted Plate -->
+          <div class="restaurants__card enchatedPlate">
+            <img
+              src="./img/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="The Enchanted Plate picture"
+              class="restaurants__cardPicture"
+            />
+            <div class="restaurants__cardInfo grid">
+              <h2 class="restaurants__cardTitle">The Enchanted Plate</h2>
+              <p class="restaurants__cardText">New York</p>
+              <i class="far fa-heart restaurants__cardIcon"></i>
+            </div>
+          </div>
+
+          <!-- Bastille -->
+          <div class="restaurants__card restaurants__card--big bastille">
+            <img
+              src="./img/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="Bastille picture"
+              class="restaurants__cardPicture restaurants__cardPicture--big"
+            />
+            <div class="restaurants__cardInfo grid">
+              <h2 class="restaurants__cardTitle">Bastille</h2>
+              <p class="restaurants__cardText">New York</p>
+              <i class="far fa-heart restaurants__cardIcon"></i>
+            </div>
+          </div>
+
+          <!-- Le Gourmand -->
+          <div class="restaurants__card gourmand">
+            <img
+              src="./img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="Le Gourmand picture"
+              class="restaurants__cardPicture"
+            />
+            <div class="restaurants__cardInfo grid">
+              <h2 class="restaurants__cardTitle">Le Gourmand</h2>
+              <p class="restaurants__cardText">New York</p>
+              <i class="far fa-heart restaurants__cardIcon"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- Footer -->
-    <footer class="footer">
-      <h3 class="footer__heading">ohmyfood</h3>
-      <ul class="footer__links flex flex-ai-c flex-jc-c">
-        <li class="footer__listItems">
-          <i class="fas fa-utensils footer__icon1"></i
-          ><a href="#">Suggest a restaurant</a>
-        </li>
-        <li class="footer__listItems">
-          <i class="fas fa-hands-helping footer__icon2"></i>
-          <a href="#">Become a partner</a>
-        </li>
-        <li class="footer__listItems"><a href="#">Legal</a></li>
-        <li class="footer__listItems"><a href="#">Contact</a></li>
-      </ul>
+    <footer class="footer flex flex-jc-c flex-ai-c">
+      <div>
+        <h3 class="footer__heading">ohmyfood</h3>
+        <ul class="footer__links flex flex-ai-c flex-jc-c">
+          <li class="footer__listItems">
+            <i class="fas fa-utensils footer__icon1"></i
+            ><a href="#">Suggest a restaurant</a>
+          </li>
+          <li class="footer__listItems">
+            <i class="fas fa-hands-helping footer__icon2"></i>
+            <a href="#">Become a partner</a>
+          </li>
+          <li class="footer__listItems"><a href="#">Legal</a></li>
+          <li class="footer__listItems"><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

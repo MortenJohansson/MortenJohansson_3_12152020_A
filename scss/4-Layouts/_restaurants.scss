@@ -1,0 +1,142 @@
+.restaurants {
+  background: $backgroundColorAlt;
+  &__title {
+    padding-bottom: 25px;
+  }
+
+  @include breakpoint-down(small) {
+    height: 1180px;
+    padding: 25px 10px;
+
+    &__cards {
+      grid-row-gap: 25px;
+    }
+    &__card {
+      height: 250px;
+      width: 100%;
+
+      border-radius: 15px;
+      background: white;
+      box-shadow: $box-shadow;
+    }
+    &__cardPicture {
+      height: 175px;
+      width: 100%;
+      object-fit: cover;
+
+      border-radius: 15px 15px 0 0;
+    }
+    &__cardInfo {
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 50% 50%;
+      height: 75px;
+    }
+    &__cardTitle {
+      font-size: $font-med;
+      font-weight: 500;
+      grid-column: 1/2;
+
+      padding: 15px 0 0 15px;
+    }
+    &__cardText {
+      grid-column: 1/2;
+
+      padding-left: 15px;
+    }
+    &__cardIcon {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      justify-self: end;
+      align-self: center;
+
+      padding-right: 15px;
+    }
+  }
+  @include breakpoint-up(medium) {
+    height: 627px;
+    padding: 25px;
+
+    &__cards {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    &__card {
+      height: 250px;
+      width: 100%;
+
+      border-radius: 15px;
+      background: white;
+      box-shadow: $box-shadow;
+    }
+    &__cardPicture {
+      height: 175px;
+      width: 100%;
+      object-fit: cover;
+
+      border-radius: 15px 15px 0 0;
+    }
+    &__cardInfo {
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 50% 50%;
+      height: 75px;
+    }
+    &__cardTitle {
+      font-size: $font-med;
+      font-weight: 500;
+      grid-column: 1/2;
+
+      padding: 15px 0 0 15px;
+    }
+    &__cardText {
+      font-weight: 400;
+      grid-column: 1/2;
+      padding-left: 15px;
+    }
+    &__cardIcon {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      justify-self: end;
+      align-self: center;
+
+      font-size: $font-lg;
+      padding-right: 15px;
+    }
+  }
+  @include breakpoint-up(xlarge) {
+    &__section {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    &__cards {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    &__card--big {
+      display: grid;
+      grid-template-rows: 85% 15%;
+
+      height: 100%;
+    }
+    &__cardPicture--big {
+      height: 100%;
+    }
+
+    .fullPalette {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+    .enchantedPlate {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .bastille {
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
+    .gourmand {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  }
+}

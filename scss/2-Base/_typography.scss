@@ -3,7 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 // Styles
+h2 {
+  font-family: $textFont;
+  margin: 0;
+  padding: 0;
+}
+
 p {
+  font-family: $textFont;
   margin: 0;
   padding: 0;
 }
