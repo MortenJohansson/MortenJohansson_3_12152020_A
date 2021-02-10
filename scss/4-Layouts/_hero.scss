@@ -2,10 +2,7 @@
   text-align: center;
 
   .heroTop {
-    padding: 25px;
-    height: 200px;
     background-color: $backgroundColorAlt;
-
     &__title {
       font-size: $font-lg;
       margin-bottom: 25px;
@@ -17,102 +14,72 @@
       margin-top: 25px;
     }
   }
-
   .heroBottom {
-    padding: 25px;
-
     &__title {
       font-size: $font-lg;
       margin-bottom: 25px;
       text-align: left;
     }
   }
-
-  .heroCards {
-    flex-direction: column;
-  }
-
-  .heroCard {
-    height: 50px;
-    width: 310px;
-    border-radius: 15px;
-
-    background-color: $backgroundColorAlt;
-    box-shadow: $box-shadow;
-
-    &__circle {
-      position: relative;
-      right: 12px;
-
-      height: 25px;
-      width: 25px;
-
-      border-radius: 50%;
-      background-color: $color-primary;
-    }
-    &__icon {
-      font-size: $font-med;
-      color: $iconColor;
-      margin-right: 12px;
-    }
-    &__text {
-      font-weight: 700;
-    }
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-  }
-
   @include breakpoint-down(small) {
     height: 523px;
 
     .heroTop {
       height: 218px;
       padding: 25px 10px;
-
       &__text {
         height: 38px;
       }
     }
-    .heroCard {
-      width: 100%;
-    }
     .heroBottom {
       height: 305px;
       padding: 25px 10px;
-    }
-    .heroCard {
-      width: 92%;
+
+      &__cards {
+        flex-direction: column;
+      }
+      &__card {
+        width: 92%;
+      }
     }
   }
   @include breakpoint-up(medium) {
     height: 505px;
+    .heroTop {
+      height: 200px;
+      padding: 25px;
+    }
     .heroBottom {
       height: 305px;
-      &__title {
-        text-align: center;
-      }
-    }
-    .heroCard {
-      &__icon {
-        margin: 0 25px;
+      padding: 25px;
+      &__cards {
+        flex-direction: column;
       }
     }
   }
   @include breakpoint-up(large) {
     height: 354px;
-    .heroCards {
-      flex-direction: row;
-      justify-content: center;
-    }
-    .heroCard {
-      &:not(:last-child) {
-        margin-right: 20px;
-        margin-bottom: 0;
-      }
-    }
     .heroBottom {
       height: 154px;
+
+      &__cards {
+        flex-direction: row;
+        justify-content: center;
+      }
+      &__card {
+        &:not(:last-child) {
+          margin-right: 50px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @include breakpoint-up(xlarge) {
+    .heroBottom {
+      &__title {
+        max-width: 1440px;
+        margin: 0 auto 25px auto;
+      }
     }
   }
 }

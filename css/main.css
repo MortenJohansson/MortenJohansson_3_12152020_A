@@ -91,6 +91,38 @@ a {
   outline: none;
 }
 
+.heroBottom__card {
+  height: 50px;
+  width: 310px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+.heroBottom__card:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.heroBottom__cardCircle {
+  position: relative;
+  right: 12px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356dc;
+}
+
+.heroBottom__cardIcon {
+  font-size: 1.125rem;
+  color: #7e7e7e;
+  margin-right: 12px;
+}
+
+.heroBottom__cardText {
+  font-weight: 700;
+}
+
 .restaurants__card {
   height: 250px;
   width: 100%;
@@ -209,19 +241,11 @@ a {
   right: 15px;
 }
 
-@media (min-width: 64em) {
-  .location {
-    display: none;
-  }
-}
-
 .hero {
   text-align: center;
 }
 
 .hero .heroTop {
-  padding: 25px;
-  height: 200px;
   background-color: #f6f6f6;
 }
 
@@ -238,53 +262,10 @@ a {
   margin-top: 25px;
 }
 
-.hero .heroBottom {
-  padding: 25px;
-}
-
 .hero .heroBottom__title {
   font-size: 1.5rem;
   margin-bottom: 25px;
   text-align: left;
-}
-
-.hero .heroCards {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.hero .heroCard {
-  height: 50px;
-  width: 310px;
-  border-radius: 15px;
-  background-color: #f6f6f6;
-  -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
-}
-
-.hero .heroCard__circle {
-  position: relative;
-  right: 12px;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  background-color: #9356dc;
-}
-
-.hero .heroCard__icon {
-  font-size: 1.125rem;
-  color: #7e7e7e;
-  margin-right: 12px;
-}
-
-.hero .heroCard__text {
-  font-weight: 700;
-}
-
-.hero .heroCard:not(:last-child) {
-  margin-bottom: 25px;
 }
 
 @media (max-width: 39.9375em) {
@@ -298,14 +279,17 @@ a {
   .hero .heroTop__text {
     height: 38px;
   }
-  .hero .heroCard {
-    width: 100%;
-  }
   .hero .heroBottom {
     height: 305px;
     padding: 25px 10px;
   }
-  .hero .heroCard {
+  .hero .heroBottom__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .heroBottom__card {
     width: 92%;
   }
 }
@@ -314,14 +298,19 @@ a {
   .hero {
     height: 505px;
   }
+  .hero .heroTop {
+    height: 200px;
+    padding: 25px;
+  }
   .hero .heroBottom {
     height: 305px;
+    padding: 25px;
   }
-  .hero .heroBottom__title {
-    text-align: center;
-  }
-  .hero .heroCard__icon {
-    margin: 0 25px;
+  .hero .heroBottom__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -329,7 +318,10 @@ a {
   .hero {
     height: 354px;
   }
-  .hero .heroCards {
+  .hero .heroBottom {
+    height: 154px;
+  }
+  .hero .heroBottom__cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -338,12 +330,16 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .hero .heroCard:not(:last-child) {
-    margin-right: 20px;
+  .hero .heroBottom__card:not(:last-child) {
+    margin-right: 50px;
     margin-bottom: 0;
   }
-  .hero .heroBottom {
-    height: 154px;
+}
+
+@media (min-width: 90em) {
+  .hero .heroBottom__title {
+    max-width: 1440px;
+    margin: 0 auto 25px auto;
   }
 }
 

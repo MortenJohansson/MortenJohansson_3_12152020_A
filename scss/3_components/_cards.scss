@@ -1,5 +1,35 @@
-// Card for restaurant section
+// Card for Hero Bottom section
+.heroBottom {
+  &__card {
+    height: 50px;
+    width: 310px;
+    border-radius: 15px;
+    background-color: $backgroundColorAlt;
+    box-shadow: $box-shadow;
 
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__cardCircle {
+    position: relative;
+    right: 12px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: $color-primary;
+  }
+  &__cardIcon {
+    font-size: $font-med;
+    color: $iconColor;
+    margin-right: 12px;
+  }
+  &__cardText {
+    font-weight: 700;
+  }
+}
+
+// Card for restaurant section
 .restaurants {
   &__card {
     height: 250px;
