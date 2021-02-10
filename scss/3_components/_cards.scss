@@ -1,0 +1,52 @@
+// Card for restaurant section
+
+.restaurants {
+  &__card {
+    height: 250px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+
+    @include breakpoint-up(xlarge) {
+      &--big {
+        height: 100%;
+        grid-template-rows: 85% 15%;
+      }
+    }
+  }
+  &__cardPicture {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+
+    @include breakpoint-up(xlarge) {
+      &--big {
+        height: 100%;
+      }
+    }
+  }
+  &__cardBody {
+    height: 75px;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50% 50%;
+  }
+  &__cardTitle {
+    padding: 15px 0 0 15px;
+    font-size: $font-med;
+    font-weight: 500;
+    grid-column: 1/2;
+  }
+  &__cardText {
+    padding: 0 0 0 15px;
+    grid-column: 1/2;
+  }
+  &__cardIcon {
+    justify-self: end;
+    align-self: center;
+    padding-right: 15px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}

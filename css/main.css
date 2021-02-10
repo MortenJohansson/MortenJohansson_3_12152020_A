@@ -91,6 +91,76 @@ a {
   outline: none;
 }
 
+.restaurants__card {
+  height: 250px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 90em) {
+  .restaurants__card--big {
+    height: 100%;
+    -ms-grid-rows: 85% 15%;
+        grid-template-rows: 85% 15%;
+  }
+}
+
+.restaurants__cardPicture {
+  height: 175px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+@media (min-width: 90em) {
+  .restaurants__cardPicture--big {
+    height: 100%;
+  }
+}
+
+.restaurants__cardBody {
+  height: 75px;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.restaurants__cardTitle {
+  padding: 15px 0 0 15px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.restaurants__cardText {
+  padding: 0 0 0 15px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.restaurants__cardIcon {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 15px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
 .header {
   position: relative;
   height: 100px;
@@ -293,56 +363,6 @@ a {
   .restaurants__cards {
     grid-row-gap: 25px;
   }
-  .restaurants__card {
-    height: 250px;
-    width: 100%;
-    border-radius: 15px;
-    background: white;
-    -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
-  }
-  .restaurants__cardPicture {
-    height: 175px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
-  .restaurants__cardInfo {
-    -ms-grid-columns: 80% 20%;
-        grid-template-columns: 80% 20%;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
-    height: 75px;
-  }
-  .restaurants__cardTitle {
-    font-size: 1.125rem;
-    font-weight: 500;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    padding: 15px 0 0 15px;
-  }
-  .restaurants__cardText {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    padding-left: 15px;
-  }
-  .restaurants__cardIcon {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    padding-right: 15px;
-  }
 }
 
 @media (min-width: 40em) {
@@ -357,58 +377,6 @@ a {
         grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
   }
-  .restaurants__card {
-    height: 250px;
-    width: 100%;
-    border-radius: 15px;
-    background: white;
-    -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.1);
-  }
-  .restaurants__cardPicture {
-    height: 175px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
-  .restaurants__cardInfo {
-    -ms-grid-columns: 60% 40%;
-        grid-template-columns: 60% 40%;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
-    height: 75px;
-  }
-  .restaurants__cardTitle {
-    font-size: 1.125rem;
-    font-weight: 500;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    padding: 15px 0 0 15px;
-  }
-  .restaurants__cardText {
-    font-weight: 400;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    padding-left: 15px;
-  }
-  .restaurants__cardIcon {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 1.5rem;
-    padding-right: 15px;
-  }
 }
 
 @media (min-width: 90em) {
@@ -421,16 +389,6 @@ a {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-  }
-  .restaurants__card--big {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 85% 15%;
-        grid-template-rows: 85% 15%;
-    height: 100%;
-  }
-  .restaurants__cardPicture--big {
-    height: 100%;
   }
   .restaurants .fullPalette {
     -ms-grid-column: 1;
