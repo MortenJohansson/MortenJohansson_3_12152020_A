@@ -10,7 +10,6 @@
   //Mobile && Tablet
   @include breakpoint-down(medium) {
     padding: 0 10px;
-    justify-content: center;
   }
   &__navTitle {
     text-align: center;

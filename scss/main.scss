@@ -5,11 +5,13 @@
 @import "./2-Base/reset";
 @import "./2-Base/typography";
 
-@import "./3_components/buttons";
-@import "./3_components/cards";
+@import "./3-components/buttons";
+@import "./3-components/cards";
 
 @import "./4-Layouts/header";
 @import "./4-Layouts/location";
 @import "./4-Layouts/hero";
 @import "./4-Layouts/restaurants";
 @import "./4-Layouts/footer";
+
+@import "./5-Pages/menu";
