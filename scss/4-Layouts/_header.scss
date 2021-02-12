@@ -17,7 +17,7 @@
     font-size: $font-xl;
     cursor: pointer;
   }
-  @include breakpoint-up(large) {
+  @include breakpoint-up(xlarge) {
     &__nav {
       max-width: 1440px;
       margin: 0 auto;

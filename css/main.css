@@ -275,7 +275,7 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 90em) {
   .header__nav {
     max-width: 1440px;
     margin: 0 auto;
@@ -533,7 +533,7 @@ a {
   font-size: 1.5rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 90em) {
   .menuPage {
     display: block;
   }
@@ -556,7 +556,7 @@ a {
   height: 100%;
   padding: 0 10px;
   background-color: white;
-  border-radius: 15px 15px 0 0;
+  border-radius: 25px 25px 0 0;
 }
 
 .menu__title {
