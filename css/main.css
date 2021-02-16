@@ -407,6 +407,10 @@ a {
   padding-bottom: 25px;
 }
 
+.restaurants__cardLinks {
+  cursor: pointer;
+}
+
 @media (max-width: 39.9375em) {
   .restaurants {
     height: 1180px;
@@ -477,7 +481,7 @@ a {
 }
 
 .footer {
-  height: 150px;
+  height: 20vh;
   background-color: #353535;
   color: white;
   text-align: center;
