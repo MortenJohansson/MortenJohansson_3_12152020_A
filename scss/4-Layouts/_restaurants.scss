@@ -3,6 +3,9 @@
   &__title {
     padding-bottom: 25px;
   }
+  &__cardLinks {
+    cursor: pointer;
+  }
   @include breakpoint-down(small) {
     height: 1180px;
     padding: 25px 10px;
